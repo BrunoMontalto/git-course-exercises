@@ -11,37 +11,25 @@ int main()
   cout << "Enter week number(1-7): " << endl;
   cin >> week;
 
-  if (week == 1)
-  {
+  switch(week){
+  
+  case 1:
     cout << "Monday" << endl;
-  }
-  else if (week == 2)
-  {
+  case 2:
     cout << "Tuesday" << endl;
-  }
-  else if (week == 3)
-  {
+  case 3:
     cout << "Wednesday" << endl;
-  }
-  else if (week == 4)
-  {
+  case 4:
     cout << "Thursday" << endl;
-  }
-  else if (week == 5)
-  {
+  case 5:
     cout << "Friday" << endl;
-  }
-  else if (week == 6)
-  {
+  case 6:
     cout << "Saturday" << endl;
-  }
-  else if (week == 7)
-  {
+  case 7:
     cout << "Sunday" << endl;
-  }
-  else
-  {
+  default:
     cout << "Invalid input! Please enter week number between 1-7." << endl;
+  
   }
 
   return 0;
